@@ -18,9 +18,11 @@ DELIVERABLE 2
 In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots.
 
 The first summary shows all manufacturing lots, per the below
+
 ![image](https://user-images.githubusercontent.com/91917546/153770687-de5e5de3-dd58-48cf-a6ca-c390dbee9869.png)
 
 The second summary shows a summary grouped by each manufacturing lot
+
 ![image](https://user-images.githubusercontent.com/91917546/153770817-3dc844a0-178c-4afb-9f83-6a3c54de791c.png)
 
 The total variance is 62.29 PSI , which iswithin the tolerance of 100PSI.  When we group by lots it is apparent that the variance in Manufacturing Lot 3 is 170.29 PSI, which is outside the allowable limit.  Therefore, any suspension coils produced in Manufacturing Lot 3 should be rejected.  The variance of Manufacturing Lot 1 and 2 are 0.98 PSI and 7.47 PSI respectively, so Manufacturing Lot 1 and 2 are within the allowable limit and can be accepted
@@ -35,5 +37,23 @@ The T test on the entire vehicle data set PSI to determine whether the suspensio
 
 ![image](https://user-images.githubusercontent.com/91917546/153774476-890f52b5-38b4-46be-84b0-d0059c1abfdd.png)
 
+The resultant P-values as shown above vary significantly between each Manufacturing Lot.  The P value of Manufacturing Lot 1 is 1, and the p-value of Manufacturing Lot 2 is .0672.  Neither p-values are low enough to reject the null hypothesis, and we can conclude that the data from Manufacturing Lot 1 and 2 is not statistically significantly different from the population mean.  However, the p-value of Manufacturing Lot 3 is .04168 is low enough that we can reject the null hypothesis and conclude the data is statistically significantly different from the population mean.  This is in line with our earlier findings, and could be related as to why the variance in Manufacturing Lot 3 is much higher then Manufacturing Lots 1 and 2. 
 
 
+
+## Study Design: MechaCar vs Competition
+
+In today's environment, people want to be proud of the companies they purchase products from and of the products they purchase.  Individulas wants to know that was they are consuming is having a positive effect on the world.  An ideal test for the MechaCar would be to statistically compare it's environmental impact to that of other vehicles.
+
+METRIC 
+The best metric to to measure Mechacar's carbon emissions against a field of competitors.  Ideally, we would measure CO2e/gallon for to determine Mechacar vehicles' average carbon footprint compared to it's competitors.
+
+NULL HYPOTHESIS
+H0: MechaCar vehicles carbon footprint is similar to it's competitors carbon emissions
+Ha: MechaCar vehicles carbon emissions' are signficantly above or below it's competitors carbon emissions'
+
+STATISTICAL TEST
+To compare mechacar's carbon footprint to it's competitors we would use a two sample t test
+
+NECESSARY DATA
+We would need to collect the average carbon emissions in CO2 per gallon for mechcar and it's competitors at various speeds and conditions.  We could then compare them each in similar conditions, and then compare the summary data from each respective vehicle.
