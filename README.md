@@ -14,14 +14,26 @@ We can conclude that although it could be better and there is a chance that beca
 
 
 
+DELIVERABLE 2
+In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots.
+
+The first summary shows all manufacturing lots, per the below
+![image](https://user-images.githubusercontent.com/91917546/153770687-de5e5de3-dd58-48cf-a6ca-c390dbee9869.png)
+
+The second summary shows a summary grouped by each manufacturing lot
+![image](https://user-images.githubusercontent.com/91917546/153770817-3dc844a0-178c-4afb-9f83-6a3c54de791c.png)
+
+The total variance is 62.29 PSI , which iswithin the tolerance of 100PSI.  When we group by lots it is apparent that the variance in Manufacturing Lot 3 is 170.29 PSI, which is outside the allowable limit.  Therefore, any suspension coils produced in Manufacturing Lot 3 should be rejected.  The variance of Manufacturing Lot 1 and 2 are 0.98 PSI and 7.47 PSI respectively, so Manufacturing Lot 1 and 2 are within the allowable limit and can be accepted
 
 
-Residual standard error: 8.774 on 44 degrees of freedom
-Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
-F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
+DELIVERABLE 3 T TESTS
+ 
+![image](https://user-images.githubusercontent.com/91917546/153774166-31872936-7f52-464b-9d97-e3882ab97586.png)
 
-p-value: 5.35e-11
-Multiple R-squared:  0.7149
--p value is significant, low so reject the null, which means the slope of our linear model is not 0.  
--R squared .7149, means that 71.49% of our variability is of our dependent variables is explained using the linear model
--The lack of significant variables shows that overfitting is likely,performs well with a current dataset, but fails to generalize and predict future data correctly.
+The T test on the entire vehicle data set PSI to determine whether the suspension coils across all manufacturing lots.  The results show a value of .06028 which is not statisitically significantly different enough from the population mean of 1500 for us to reject the null hypothesis
+
+
+![image](https://user-images.githubusercontent.com/91917546/153774476-890f52b5-38b4-46be-84b0-d0059c1abfdd.png)
+
+
+
